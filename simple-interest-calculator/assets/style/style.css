@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: poppins;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    height: 100vh;
+    font-family: poppins;
+}
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px #7777;
+}
+.container h1{
+    padding: 1rem 0 0.5rem;
+    font-size: 2rem;
+    color: rgb(84, 84, 255);
+    text-align: center;
+    line-height: 36px;
+    
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+.container form .input{
+    margin: 0.7rem 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.container form .input input{
+    padding: 14px 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-top: 0.1rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+.container form .input label{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.container form button{
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 1px solid #e9e9e9;
+    display: inline-block;
+    margin: 1rem 0 1rem;
+    background-color: rgb(84, 84, 255);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: poppins;
+}
+.container form button:hover{
+    background-color: rgb(76, 76, 253);
+}
+.container p#error{
+color: #ff4d4d;
+    background-color: #ffe6e6;
+    border: 1px solid #ff4d4d;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    
+}
+.container p{
+color: #2d8631;
+    background-color: #e9f5e9;
+    border: 1px solid #2d8631;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    display: none;
+}
+.container form .input input:focus-within{
+    font-size: 15px;}
